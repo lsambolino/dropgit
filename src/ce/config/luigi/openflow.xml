@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openflow>
+  <address>192.168.1.100</address>
+  <port>6633</port>
+</openflow>

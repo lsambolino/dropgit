@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<http>
+  <class>TcpIOServer</class>
+  
+  <local>
+    <address>192.168.1.100</address>
+    <port>80</port>
+  </local>
+</http>

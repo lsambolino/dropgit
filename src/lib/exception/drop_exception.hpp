@@ -1,0 +1,79 @@
+
+/*
+
+Copyright (c) 2013, Sergio Mangialardi (sergio@reti.dist.unige.it)
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, 
+are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list 
+of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this 
+list of conditions and the following disclaimer in the documentation and/or 
+other materials provided with the distribution.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE 
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL 
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR 
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, 
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+*/
+
+#ifndef LIB_DROP_EXCEPTION_HPP_
+#define LIB_DROP_EXCEPTION_HPP_
+
+#include <stdexcept>
+#include <system_error>
+
+#include "exception/exception.hpp"
+
+namespace drop {
+
+struct NoCeAssociation: public std::runtime_error
+{
+    explicit NoCeAssociation(const std::string& msg): std::runtime_error(msg) { }
+};
+
+struct NoCeConnection: public std::runtime_error
+{
+    explicit NoCeConnection(const std::string& msg): std::runtime_error(msg) { }
+};
+
+struct UnknownDropMessage: public std::logic_error
+{
+    explicit UnknownDropMessage(const std::string& msg): std::logic_error(msg) {}
+};
+
+struct IgnoredMessage: public std::logic_error
+{
+    explicit IgnoredMessage(const std::string& msg): std::logic_error(msg) { }
+};
+
+struct NonExistentEnergyAwareState: public std::runtime_error
+{
+    explicit NonExistentEnergyAwareState(const std::string& msg): std::runtime_error(msg) { }
+};
+
+class KernelOperationFailed: public std::system_error
+{
+public:
+    explicit KernelOperationFailed(int error_code): std::system_error(std::error_code(error_code, std::system_category())), error_code_{ error_code } { }
+    int code() const { return error_code_; }
+private:
+    int error_code_;
+};
+
+struct InvalidMessage: public std::runtime_error
+{
+    explicit InvalidMessage(const std::string& msg): std::runtime_error(msg) { }
+};
+
+} // namespace drop
+
+#endif

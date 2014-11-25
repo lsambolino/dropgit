@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policy>
+  <class>SimplePolicy</class>
+  <!--<initial>10</initial>
+      <max>50</max>
+      <shrink>true</shrink>-->
+</policy>

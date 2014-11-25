@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<demo num_cores="8">
+  <local>
+    <address>192.168.255.255</address>
+    <port>666</port>
+  </local>
+
+  <slots>300</slots>
+
+  <profiles default="2">
+    <profile id ="0">
+      <slots>
+        <slot num="1">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x11111111" />
+          <voltage value="0x5b" />
+        </slot>
+      </slots>
+    </profile>
+
+    <profile id ="1">
+      <slots>
+        <slot num="1">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x33333333" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="50">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x44444444" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="67">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x55555555" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="79">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x66666666" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="94">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x77777777" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="123">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0xbbbbbbbb" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="147">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x77777777" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="164">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x66666666" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="173">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x55555555" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="182">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x44444444" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="193">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x33333333" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="210">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x22222222" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="237">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x33333333" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="244">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x22222222" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="281">
+          <cores a0="0x11111111" a1="0x11111111" a2="0x11111111" a3="0x11111111" />
+          <freq value="0x33333333" />
+          <voltage value="0x68" />
+        </slot>
+      </slots>
+    </profile>
+
+    <profile id ="2">
+      <slots>
+        <slot num="1">
+          <cores a0="0x0" a1="0x0" a2="0x0" a3="0x11110000" />
+          <freq value="0xbbbbbb4b" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="55">
+          <cores a0="0x0" a1="0x0" a2="0x0" a3="0x11110000" />
+          <freq value="0xbbbbbb5b" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="77">
+          <cores a0="0x0" a1="0x0" a2="0x0" a3="0x11110000" />
+          <freq value="0xbbbbbb6b" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="92">
+          <cores a0="0x0" a1="0x0" a2="0x0" a3="0x11110000" />
+          <freq value="0xbbbbbb7b" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="165">
+          <cores a0="0x0" a1="0x0" a2="0x0" a3="0x11110000" />
+          <freq value="0xbbbbbb6b" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="174">
+          <cores a0="0x0" a1="0x0" a2="0x0" a3="0x11110000" />
+          <freq value="0xbbbbbb5b" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="191">
+          <cores a0="0x0" a1="0x0" a2="0x0" a3="0x11110000" />
+          <freq value="0xbbbbbb4b" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="204">
+          <cores a0="0x0" a1="0x0" a2="0x0" a3="0x11110000" />
+          <freq value="0xbbbbbb3b" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="237">
+          <cores a0="0x0" a1="0x0" a2="0x0" a3="0x11110000" />
+          <freq value="0xbbbbbb4b" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="246">
+          <cores a0="0x0" a1="0x0" a2="0x0" a3="0x11110000" />
+          <freq value="0xbbbbbb3b" />
+          <voltage value="0x68" />
+        </slot>
+        <slot num="280">
+          <cores a0="0x0" a1="0x0" a2="0x0" a3="0x11110000" />
+          <freq value="0xbbbbbb4b" />
+          <voltage value="0x68" />
+        </slot>
+      </slots>
+    </profile>
+  </profiles>
+</demo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drop>
+  <class>TcpIOClient</class>
+  
+  <local>
+    <address>192.168.1.17</address>
+    <!--<port>7777</port>-->
+  </local>
+
+  <remote>
+    <address>192.168.1.243</address>
+    <port>5555</port>
+  </remote>
+
+  <connection>
+    <delay>500</delay>
+    <timeout>5000</timeout>
+    <interval>5</interval>
+    <attempts>0</attempts>
+  </connection>
+</drop>

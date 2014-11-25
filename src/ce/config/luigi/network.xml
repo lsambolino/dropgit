@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network>
+  <topology>
+    <nodes>
+      <node name="NETFPGA" force_connected="true">
+        <services>
+          <service type="Interconnection" />
+          <service type="GalRest" />
+        </services>
+      </node>
+    </nodes>
+  </topology>
+
+  <interfaces>
+    <!-- NETFPGA -->
+    <interface name="deth0" mac="aa:bb:cc:01:01:10" node="NETFPGA" port="0">
+      <addresses>
+        <address value="127.0.0.1" prefix="24" />
+      </addresses>
+    </interface>
+  </interfaces>
+</network>

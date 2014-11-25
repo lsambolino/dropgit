@@ -1,0 +1,8 @@
+
+KNOWN BUGS:
+
+HIGH PRIORITY:
+1) Committed and provisioned states are not read correctly (both in CE and FE).
+
+LOW PRIORITY:
+1) Segfault while exiting the service (both in CE and FE).

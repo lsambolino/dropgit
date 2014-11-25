@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Gal>
+  <Type>
+    <![CDATA[Forwarding Element]]>
+  </Type>
+
+  <Description>
+    <![CDATA[DROP Forwarding Element]]>
+  </Description>
+
+  <LogicalResources>
+    <LogicalResource id="eth0">
+      <Type>
+        <![CDATA[Network Interface]]>
+      </Type>
+      <Description>
+        <![CDATA[Network Interface]]>
+      </Description>
+    </LogicalResource>
+
+    <LogicalResource id="eth1">
+      <Type>
+        <![CDATA[Network Interface]]>
+      </Type>
+      <Description>
+        <![CDATA[Network Interface]]>
+      </Description>
+    </LogicalResource>
+  </LogicalResources>
+
+  <PhysicalResources>
+    <PhysicalResource id="Core0">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core1">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core2">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core3">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core4">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core5">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core6">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core7">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+  </PhysicalResources>
+
+  <SensorResources>
+    <SensorResource id="momentaryConsumption" type="6" scale="0" precision="1" refresh_rate="0" max="160">
+      <Description>
+        <![CDATA[Momentary Consumption]]>
+      </Description>
+    </SensorResource>
+    
+    <SensorResource id="traffic" type="1" scale="9" precision="1" refresh_rate="0" max="20">
+      <Description>
+        <![CDATA[Incoming Traffic]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="voltage" type="4" scale="-1" precision="1" refresh_rate="0" max="8">
+      <Description>
+        <![CDATA[CPU Voltage]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="cpuLoad" type="1" scale="0" precision="1" refresh_rate="0" max="100">
+      <Description>
+        <![CDATA[CPU percentage load]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="freq0" type="7" scale="6" precision="1" refresh_rate="0" max="1600">
+      <Description>
+        <![CDATA[Core 0 Frequency]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="freq1" type="7" scale="6" precision="1" refresh_rate="0" max="1600">
+      <Description>
+        <![CDATA[Core 1 Frequency]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="freq2" type="7" scale="6" precision="1" refresh_rate="0" max="1600">
+      <Description>
+        <![CDATA[Core 2 Frequency]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="freq3" type="7" scale="6" precision="1" refresh_rate="0" max="1600">
+      <Description>
+        <![CDATA[Core 3 Frequency]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="freq4" type="7" scale="6" precision="1" refresh_rate="0" max="1600">
+      <Description>
+        <![CDATA[Core 4 Frequency]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="freq5" type="7" scale="6" precision="1" refresh_rate="0" max="1600">
+      <Description>
+        <![CDATA[Core 5 Frequency]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="freq6" type="7" scale="6" precision="1" refresh_rate="0" max="1600">
+      <Description>
+        <![CDATA[Core 6 Frequency]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="freq7" type="7" scale="6" precision="1" refresh_rate="0" max="1600">
+      <Description>
+        <![CDATA[Core 7 Frequency]]>
+      </Description>
+    </SensorResource>
+  </SensorResources>
+
+  <EnergyAwareStates>
+    <EnergyAwareState id="0">
+      <MinimumPowerGain>0</MinimumPowerGain>
+      <MaximumPacketThroughput>333672</MaximumPacketThroughput>
+      <MaximumBitThroughput>946518328</MaximumBitThroughput>
+    </EnergyAwareState>
+  </EnergyAwareStates>
+</Gal>

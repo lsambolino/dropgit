@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se>
+  <use_userspace_forward>true</use_userspace_forward>
+
+  <heartbeat>
+    <interval>2</interval>
+  </heartbeat>
+
+  <forwarding>
+    <stats>
+      <enable>true</enable>
+      <interval>500</interval>
+    </stats>
+    <mac>90:e2:ba:3f:d3:14</mac>
+  </forwarding>
+
+  <lcp>
+    <class>DemoLCP</class>
+    <sync>
+      <ip>192.168.255.255</ip>
+      <port>666</port>
+      <slots>300</slots>
+    </sync>
+  </lcp>
+
+  <netmap>
+    <interface>eth1</interface>
+    <burst>32</burst>
+    <poll>false</poll>
+    <entries>4096</entries>
+    <init_wait>5</init_wait>
+    <sleep>900</sleep>
+  </netmap>
+
+  <connection>
+    <interval>5</interval>
+    <attempts>0</attempts>
+    <delay>500</delay>
+  </connection>
+</se>

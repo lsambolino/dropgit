@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flows>
+  <vars>
+    <var name="mac_noce" value="90:e2:ba:4d:2f:59" />
+    <var name="mac_xlp1" value="00:0F:30:20:2B:0B" />
+    <var name="mac_xlp2" value="00:0F:30:20:2B:0D" />
+    <var name="mac_salicone" value="90:e2:ba:3f:cb:e5" />
+  </vars>
+
+  <slots>
+    <slot num="1">
+      <!--<flow>
+          <priority value="0" />
+          <filters />
+          <actions />
+        </flow>-->
+      <!-- BEGIN: OUT traffic ROUTER 1 -->
+      <!-- BEGIN F3 -->
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.4.1.2" prefix="32" />
+        </filters>
+
+        <actions>
+          <mod_vlan_vid tag="306" />
+          <mod_dl_src mac="aa:bb:cc:01:01:13" />
+          <output port="51" />
+        </actions>
+      </flow>
+
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.10.0" prefix="24" />
+        </filters>
+
+        <actions>
+          <mod_vlan_vid tag="321" />
+          <mod_dl_src mac="aa:bb:cc:01:01:14" />
+          <output port="51" />
+        </actions>
+      </flow>
+      <!-- END F3 -->
+
+      <!-- BEGIN F5 -->
+      <flow>
+        <filters>
+          <in_port port="50" />
+          <nw_dst ip="10.4.2.2" prefix="32" />
+        </filters>
+
+        <actions>
+          <mod_vlan_vid tag="507" />
+          <mod_dl_src mac="aa:bb:cc:01:01:10" />
+          <output port="52" />
+        </actions>
+      </flow>
+
+      <flow>
+        <filters>
+          <in_port port="50" />
+          <nw_dst ip="10.5.12.0" prefix="24" />
+        </filters>
+
+        <actions>
+          <mod_vlan_vid tag="521" />
+          <mod_dl_src mac="aa:bb:cc:01:01:14" />
+          <output port="52" />
+        </actions>
+      </flow>
+      <!-- END F5 -->
+      <!-- END: OUT traffic ROUTER 1 -->
+
+      <!-- BEGIN: IN traffic ROUTER 1 -->
+      <!-- BEGIN F3 -->
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3112" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <mod_dl_src mac="be:ef:be:ef:10:10" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.64" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.64" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <mod_dl_src mac="be:ef:be:ef:10:11" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <mod_dl_src mac="be:ef:be:ef:10:12" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <mod_dl_src mac="be:ef:be:ef:10:13" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <!-- END F3 -->
+
+      <!-- BEGIN F5 -->
+      <flow>
+        <filters>
+          <dl_vlan tag="521" />
+          <nw_src ip="10.5.12.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3122" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3122" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <mod_dl_src mac="be:ef:be:ef:10:14" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="521" />
+          <nw_src ip="10.5.12.64" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3122" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.64" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3124" />
+          <mod_dl_dst mac="$mac_noce" />
+          <mod_dl_src mac="be:ef:be:ef:10:15" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="521" />
+          <nw_src ip="10.5.12.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3124" />
+          <mod_dl_dst mac="$mac_noce" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3124" />
+          <mod_dl_dst mac="$mac_noce" />
+          <mod_dl_src mac="be:ef:be:ef:10:16" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="521" />
+          <nw_src ip="10.5.12.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3124" />
+          <mod_dl_dst mac="$mac_noce" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3124" />
+          <mod_dl_dst mac="$mac_noce" />
+          <mod_dl_src mac="be:ef:be:ef:10:17" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <!-- END F5 -->
+      <!-- END: IN traffic ROUTER 1 -->
+    </slot>
+    <slot num="9">
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.64" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3122" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="10">
+      <flow>
+        <filters>
+          <dl_vlan tag="521" />
+          <nw_src ip="10.5.12.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3122" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="11">
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3111" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3123" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="12">
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.64" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3111" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="521" />
+          <nw_src ip="10.5.12.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3122" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="13">
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3123" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="14">
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.64" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3111" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="27">
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3111" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="31">
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3111" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3122" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="32">
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3122" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="43">
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3111" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="44">
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3112" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="50">
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3112" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="64">
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3111" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="193">
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="198">
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="201">
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="206">
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.64" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="209">
+      <flow>
+        <filters>
+          <dl_vlan tag="521" />
+          <nw_src ip="10.5.12.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3123" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="215">
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.64" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="221">
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3123" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="226">
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="521" />
+          <nw_src ip="10.5.12.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3124" />
+          <mod_dl_dst mac="$mac_noce" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="228">
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.0" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3124" />
+          <mod_dl_dst mac="$mac_noce" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="237">
+      <flow>
+        <filters>
+          <dl_vlan tag="521" />
+          <nw_src ip="10.5.12.64" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3124" />
+          <mod_dl_dst mac="$mac_noce" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="239">
+      <flow>
+        <filters>
+          <dl_vlan tag="306" />
+          <nw_dst ip="10.5.10.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3113" />
+          <mod_dl_dst mac="$mac_salicone" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="240">
+      <flow>
+        <filters>
+          <dl_vlan tag="321" />
+          <nw_src ip="10.5.10.192" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3112" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="507" />
+          <nw_dst ip="10.5.12.64" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3124" />
+          <mod_dl_dst mac="$mac_noce" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="249">
+      <flow>
+        <filters>
+          <dl_vlan tag="521" />
+          <nw_src ip="10.5.12.128" prefix="26" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3124" />
+          <mod_dl_dst mac="$mac_noce" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+  </slots>
+</flows>

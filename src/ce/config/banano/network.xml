@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network>
+  <topology>
+    <nodes>
+      <node name="SE1" force_connected="true">
+        <services>
+          <service type="MockForwarding" />
+          <service type="MockFEGal" />
+        </services>
+      </node>
+
+      <node name="SE2" force_connected="true">
+        <services>
+          <service type="MockForwarding" />
+          <service type="MockFEGal" />
+        </services>
+      </node>
+
+      <node name="SE3" force_connected="true">
+        <services>
+          <service type="MockForwarding" />
+          <service type="MockXLPGal" />
+        </services>
+      </node>
+
+      <node name="MLX" force_connected="true">
+        <services>
+          <service type="Interconnection" />
+          <service type="GalFile" />
+        </services>
+      </node>
+
+      <node name="OF1" />
+
+      <!--<node name="OF1" force_connected="true">
+        <services>
+          <service type="Interconnection" />
+          <service type="MockOpenflowManagement" />
+          <service type="PortStatusNotification" />
+          <service type="GalFile" />
+        </services>
+      </node>-->
+    </nodes>
+  </topology>
+
+  <interfaces>
+    <!-- MLX -->
+    <interface name="deth0" mac="aa:bb:cc:01:01:10" node="MLX" port="9">
+      <addresses>
+        <address value="10.251.10.1" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth1" mac="aa:bb:cc:01:01:11" node="MLX" port="11">
+      <addresses>
+        <address value="10.251.11.1" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth2" mac="aa:bb:cc:01:01:12" node="MLX" port="12">
+      <addresses>
+        <address value="10.251.12.1" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth3" mac="aa:bb:cc:01:01:13" node="MLX" port="13">
+      <addresses>
+        <address value="10.251.13.1" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth4" mac="aa:bb:cc:01:01:14" node="MLX" port="14">
+      <addresses>
+        <address value="10.251.14.1" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth5" mac="aa:bb:cc:01:01:15" node="MLX" port="15">
+      <addresses>
+        <address value="10.251.15.1" prefix="24" />
+      </addresses>
+    </interface>
+  </interfaces>
+</network>

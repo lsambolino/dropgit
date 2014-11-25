@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Gal>
+  <Type>
+    <![CDATA[Forwarding Element]]>
+  </Type>
+
+  <Description>
+    <![CDATA[DROP Forwarding Element]]>
+  </Description>
+
+  <LogicalResources>
+    <LogicalResource id="eth1">
+      <Type>
+        <![CDATA[Network Interface]]>
+      </Type>
+      <Description>
+        <![CDATA[Network Interface]]>
+      </Description>
+    </LogicalResource>
+  </LogicalResources>
+
+  <SensorResources>
+    <SensorResource id="momentaryConsumption" type="6" scale="0" precision="1" refresh_rate="0" max="160">
+      <Description>
+        <![CDATA[Momentary Consumption]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="traffic" type="1" scale="0" precision="1" refresh_rate="0" max="10000000000">
+      <Description>
+        <![CDATA[Incoming Traffic]]>
+      </Description>
+    </SensorResource>
+    
+    <SensorResource id="activeCores" type="1" scale="0" precision="1" refresh_rate="0" max="8">
+      <Description>
+        <![CDATA[Number of active Cores]]>
+      </Description>
+    </SensorResource>
+
+    <SensorResource id="cpuLoad" type="1" scale="0" precision="1" refresh_rate="0" max="100">
+      <Description>
+        <![CDATA[CPU percentage load]]>
+      </Description>
+    </SensorResource>
+  </SensorResources>
+
+  <EnergyAwareStates>
+    <EnergyAwareState id="0">
+      <MinimumPowerGain>0</MinimumPowerGain>
+      <MaximumPacketThroughput>333672</MaximumPacketThroughput>
+      <MaximumBitThroughput>946518328</MaximumBitThroughput>
+    </EnergyAwareState>
+  </EnergyAwareStates>
+</Gal>

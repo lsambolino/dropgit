@@ -1,0 +1,2640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ce\ce_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\util\external_interface_map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\util\factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\gal\ce_lcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\network\configuration_persistence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\network\remove_flow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\parser\ce_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\parser\ce_parser_activities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\protocol\drop\drop_tx_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\protocol\netlink\kernel_netlink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\protocol\netlink\kernel_netlink_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\protocol\netlink\netlink_deth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\dynamic_library.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\ip_socket_address.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\multicast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\shared_library_exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\weekly_scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\exception\exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\util\crc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel_modules\cpufreq\cpufreq_drop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel_modules\virtual_interfaces\deth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\netlink\netlink_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\router\arp_packet_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\router\eth_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\router\flow_query.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\util\path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quagga\ce_stub\stub.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quagga\gal\gal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ce\scheduler\demo\demo_scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ce\scheduler\demo\instance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\init_sockets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\ip_address.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\shared_library.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\activity\activity_from_event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\activity\concurrent_activity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\active_object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\barrier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\colors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\demangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\event\event_from_message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\tcp_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\udp_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\parser\parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\util\configuration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\io\netlink_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\netlink\netlink_protocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\router\address.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\router\address_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\router\interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\router\port_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\router\route.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\router\route_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\setns\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\bridge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\nm_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\pcap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\pingd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\pkt-gen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\qemu-netmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\test_select.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\testcsum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\testlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\network\arp_request.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\util\arp_cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\gal_drop\acpi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\gal_drop\acpi_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\gal_drop\ethtool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\gal_drop\load_power_states.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\gal\power_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\protocol\http\http_headers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\protocol\http\http_method.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\protocol\http\http_response.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\protocol\http\http_status_code.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\protocol\http\cpprest\uri.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\protocol\http\cpprest\uri_builder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\protocol\http\cpprest\uri_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\util\pugixml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quagga\gal\Makefile">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quagga\gal\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quagga\gal_rest\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\activity\gal\lcp_sync.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\util\gal_resource_names.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\util\string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\util\exec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\file_descriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\util\system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\protocol\http\http_protocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\activity\http\controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\activity\http\http_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\control_element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\detail\control_element_impl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\detail\control_element_impl_listeners.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\network\service_element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\activity\http\web_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\http\json_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\network\setup_service_element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\network\discover_service_elements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\interconnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\openflow_management.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\gal_rest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\gal\se_lcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\util\io_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\activity\gal\service_element_lcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\activity\network\connect_control_element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\activity\network\forward.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\activity\network\restart_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\activity\network\routes_management.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\activity\network\setup_control_element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\activity\service_element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\protocol\drop\drop_tx_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\protocol\netlink\kernel_netlink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\protocol\netlink\kernel_netlink_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\util\factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\util\hyperapp_interface_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\util\interface_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\util\netmap_interface_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\activity\http\gal_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\gal_drop\gsi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\protocol\async_protocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\protocol\sync_protocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\message\message_from_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\protocol\sync_protocol_wrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\io_end_point\tcp\client\instance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\io_end_point\tcp\server\instance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\gal_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\port_status_notification.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\activity\http\http_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\se_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\router\de_control_element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ce\lcp\demo\demo_lcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\ce\lcp\demo\instance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\kernel_forwarding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\util\wol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\userspace_forwarding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common\json.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\io_end_point\udp\instance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\mock\of.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\mock\xlp_gal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\mock\fe_gal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\service\mock\fwd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\util\lookup_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\gal_drop\load_sensors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\drop_xml\drop_xml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\protocol\drop_xml\drop_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\protocol\drop_xml\drop_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\util\interfaces.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fe\parser\se_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\se_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\util\factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\util\hyperapp_interface_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\util\interface_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\util\netmap_interface_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\protocol\netlink\kernel_netlink_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\protocol\drop\drop_tx_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\protocol\drop_xml\drop_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\protocol\netlink\kernel_netlink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\parser\se_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\activity\gal\service_element_lcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\activity\network\connect_control_element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\activity\network\forward.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\activity\network\restart_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\activity\network\routes_management.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\activity\network\setup_control_element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\activity\service_element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\openflow\openflow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\drop\drop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\protocol\openflow\openflow_tx_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\se\lcp\demo\demo_lcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\se\lcp\demo\instance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\se\lcp\xlp_demo\demo_lcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\se\lcp\xlp_demo\instance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\forward.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\file_descriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\activity\network\discover_openflow_elements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\openflow\openflow_version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\openflow\flow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\openflow\flow_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\openflow\flow_flags.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\openflow\flow_filters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\openflow\flow_actions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\openflow\v_1_0\openflow_1_0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\openflow\v_1_3\openflow_1_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\protocol\drop_xml\packets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\protocol\drop_xml\packets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ce\protocol\openflow\openflow_features.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\se\protocol\openflow\openflow_features.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\protocol\openflow\v_1_3\switch_side_openflow_1_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quagga\gal_rest\real_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\lib\gal\suspend.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\add_fe_address.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\add_vlan.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\port_activities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\port_migration.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\remove_fe_address.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\remove_port.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\set_port_down.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\set_port_up.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\routing\bgp_connect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\routing\bgp_listener.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\routing\ospf_activities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\routing\setup_bgp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\association_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\network_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\util\state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\routing\bgp_connect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\routing\bgp_listener.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\routing\ospf_activities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\routing\setup_bgp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\gal\new_traffic_stats.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\network\discovery.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\routing\ospf_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\network\connection.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\routing\bgp_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\routing\ospf_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\logical\logical_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\logical\logical_network_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\logical\logical_route.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\logical\logical_vlan_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\network_elements.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\physical\physical_ie_port.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\physical\physical_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\physical\physical_network_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\physical\physical_route.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\physical\physical_vlan_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\network\bonding.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\network\port_management.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\gal\gal_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\serial_test.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\gal\fe_lcp_steering.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\gal\optimizer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\gal\xlp_powermanager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\fe\lcp\frequency\fe_lcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal\lcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal_export\gal_logical_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\handle_event.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\notification_activities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\gal\power_data.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\util\aggregated_index.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\ospf\user_ospf.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\util\demo_scheduler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\protocol\ospf\ospf_relay.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\connection_endpoint.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\ospf\ospf_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\message\routing\bgp_messages.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\message\routing\ospf_messages.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\bgp\bgp_protocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\ospf\ospf_header.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\ospf\ospf_option.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\ospf\ospf_protocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\port_factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\week_scheduler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\socket_address.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ce\io_server\tcp\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ce\io_server\udp\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\fe\io_client\tcp\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\serialization.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\manage_arp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\message\network\packet_out.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\gal\requests.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ns_ce\protocol\netlink\kernel_netlink.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\util\external_interface_map.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\util\factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\control_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\distributed_router.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\network.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\router\router.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\gal\ce_lcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\gal\gal_activities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\address_list_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\configuration_persistence.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\datapath_leave.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\interface_list_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\remove_flow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\route_list_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\arp_packet_in.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\packet_in.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\netlink\kernel_netlink.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\netlink\netlink_deth.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\gal\forwarding_element_lcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\activity\activity_watchdog.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\dynamic_library.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\dynamic_module.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\dynamic_pointer_visitor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\function_cast.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\function_pointer_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\ip_socket_address.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\lock.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\multicast.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\netlink_socket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\shared_library.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\weekly_scheduler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\event\activity_exception_exit.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\shared_library_exception.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\event\stop.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\crc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kernel_modules\virtual_interfaces\deth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\activity\gal\lcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\activity\profile_scheduler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\address_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\discovery.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\port_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\route_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\ui\ui_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\network\ack.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\message\network\reply.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\message\ui\ui_messages.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\parser\ce_parser.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\parser\ce_parser_activities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\gal\gal_protocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\gal\values.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\netlink\reply_info.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\xml\xml_protocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\poweroff.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\concurrent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\expected.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\init_sockets.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\ip_address.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\mac_address.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\memory_pool.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\scheduler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\basic_socket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\socket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\socket_options.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\thread_safe_queue.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\socket_exception.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\exception\drop_exception.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\message\network\ack.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\parser\list_activities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\netlink\netlink_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\arp_packet.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\arp_packet_factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\eth_factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\flow_query.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\port_stats.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\port_status.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\util\constraint.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\util\path.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\util\serialization.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\util\serialization_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\quagga\gal\gal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ce\scheduler\demo\demo_scheduler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ce\scheduler\demo\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\router\forwarding_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\router\routing_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\activity\activity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\activity\activity_from_event.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\activity\concurrent_activity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\activity\detail\activity_impl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\activity\sequential_activity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\active_object.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\active_object_group.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\barrier.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\binary_serialization.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\binary_serialization_detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\colors.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\containers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\demangle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\dispatch.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\dump.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\lengthof.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\log.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\math.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\platform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\pool.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\portable_binary_archive.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\range.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\text_serialization.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\thread_safe_fifo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\thread_safe_lifo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\trie_map.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\unpack_tuple.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\event\event_from_message.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\event\io_reset.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\exception\exception.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\io.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\tcp_io.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\udp_io.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\message\message.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\parser\parser.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\protocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\configuration.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\io\netlink_io.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\message\network\management.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\message\network\openflow_messages.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\drop\packets.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\drop\structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\drop\values.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\netlink\netlink_protocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\netlink\values.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\address.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\address_info.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\ie_port.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\ports.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\port_info.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\route.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\route_info.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\test\test_module.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\file_descriptor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\netmap_user.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\nm_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\message\network\arp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\arp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\arp_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\memory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\util\arp_cache.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\parser\list_routes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\util\lookup_table_tbb.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\message\network\interface_list.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\drop\drop_event.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\http_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\quit.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\http_server.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\http_server_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\http\cpprest\base_uri.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\http\cpprest\basic_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\http\http_headers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\http\http_method.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\http\http_protocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\http\http_response.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\http\http_status_code.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\http\cpprest\uri.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\http\cpprest\uri_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\http\cpprest\uri_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\message\network\http_response.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\network\connection_reset.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\util\pugiconfig.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\util\pugixml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\http\http_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal_drop\acpi.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal_drop\acpi_state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal_drop\ethtool.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal_drop\load_power_states.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal_drop\power_info.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal\device.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal\logical_resource.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal\optimal_config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal\physical_resource.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal\power_state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal\sensor_resource.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\event\http\http_server_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\event\network\connection_reset.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\event\quit.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\message\network\http_response.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\activity\network\http_server.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\message\http\http_response.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\message\virtual_interfaces_messages.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\virtual_interfaces_events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\http\http_headers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\http\http_method.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\http\http_protocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\http\http_response.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\http\http_status_code.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\http\cpprest\base_uri.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\http\cpprest\basic_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\http\cpprest\uri.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\http\cpprest\uri_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\http\cpprest\uri_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\pugiconfig.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\pugixml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\string.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\flow_stats.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\gal\synchronization.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\manip.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\activity\gal\lcp_sync.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\gal\slot_change.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\thread.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\util\gal_resource_names.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\activity\rest\gal_rest_request_util.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\activity\rest\rest_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\activity\rest\gal_rest_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\activity\rest\web_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\exec.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\application.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\system.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\router_requests.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\activity\http\controller.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\activity\http\http_server.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\event\http\http_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\control_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\detail\control_element_impl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\network\service_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\message\network\service_element_data.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\message\http\http_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\http\http_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\activity\http\web_controller.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\http\json_controller.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\setup_service_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\discover_service_elements.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\service_element_data.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\text_serialization_detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\service_element_connected.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\forwarding.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\interconnection.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\openflow_management.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\service.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal\green_standard_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\service_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\gal_rest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\gal\se_lcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\util\io_factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\gal\service_element_lcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\network\connect_control_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\network\forward.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\network\restart_connection.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\network\routes_management.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\network\setup_control_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\activity\service_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\gal\active_cores_change.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\gal\profile_change.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\network\arp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\network\forwarding_started.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\network\interface_list.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\network\operation_failed.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\network\routes_management.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\network\toggle_rate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\protocol\netlink\kernel_netlink.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\util\factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\util\hyperapp_interface_lib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\util\interface_lib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\util\likely_macro.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\util\netmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\util\netmap_interface_lib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ce\io_end_point\tcp\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ce\io_end_point\udp\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\fe\io_end_point\tcp\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\event\http\http_response.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\activity\http\gal_controller.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal_drop\gsi.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\functional_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\gsi_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\async_protocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\sync_protocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\message\message_from_data.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\message\network\se_data.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\protocol\sync_protocol_wrapper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\io_end_point\tcp\client\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\io_end_point\tcp\server\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\gal.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\gal_file.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\port_status_notification.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\service_element_disconnected.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\event\gal\statistics_update.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\activity\http\http_connection.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\random.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\network\ce_connected.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\router\de_control_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal_drop\local_control_policy_task.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ce\lcp\demo\demo_lcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\ce\lcp\demo\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\service_element_active.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\gal\lcp_task_started.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\kernel_forwarding.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\wol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\userspace_forwarding.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\gal\traffic_profile_change.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\gal\lcp_started.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\json.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\gal\history_requests.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\io_end_point\udp\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\mock\of.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\mock\xlp_gal.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\mock\fe_gal.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\openflow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\service\mock\fwd.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\gal\data_update.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\gal\data.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\util\lookup_table.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gal_drop\load_sensors.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\drop_xml\drop_xml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\async.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\mac_address_fwd.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\util\interfaces.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fe\parser\se_parser.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\util\factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\util\hyperapp_interface_lib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\util\interface_lib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\util\likely_macro.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\util\netmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\util\netmap_interface_lib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\protocol\netlink\kernel_netlink.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\parser\se_parser.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\event\network\toggle_rate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\event\gal\active_cores_change.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\event\gal\profile_change.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\event\gal\statistics_update.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\event\network\arp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\event\network\forwarding_started.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\event\network\interface_list.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\event\network\operation_failed.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\event\network\routes_management.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\activity\service_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\activity\gal\service_element_lcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\activity\network\connect_control_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\activity\network\forward.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\activity\network\restart_connection.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\activity\network\routes_management.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\activity\network\setup_control_element.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\openflow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\drop\drop.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\values.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\openflow\openflow_tx_init.cpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\se\lcp\demo\demo_lcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\se\lcp\demo\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\se\lcp\xlp_demo\demo_lcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\se\lcp\xlp_demo\instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\se\lcp\xlp_demo\optimizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\forward.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\netmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\likely_macro.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\file_descriptor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\log.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\colors.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\manip.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\lock.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\memory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\activity\network\discover_openflow_elements.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common\endianness.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\openflow_version.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\flow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\flow_factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\values.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\flow_flags.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\flow_filters.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\flow_actions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\network\port_status_change.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event\network\port_stats_reply.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\event\network\port_stats_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\message\network\port_stats_request.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\v_1_0\openflow_1_0.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\v_1_0\structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\v_1_0\values.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\v_1_3\values.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\v_1_3\structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\v_1_3\openflow_1_3.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ce\protocol\drop_xml\packets.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\se\protocol\drop_xml\packets.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\v_1_3\switch_side_openflow_1_3.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\v_1_3\switch_side_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\protocol\openflow\v_1_3\switch_side_values.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\quagga\gal_rest\real_device.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build++.mk" />
+    <None Include="NOTES" />
+    <None Include="README" />
+    <None Include="Makefile" />
+    <None Include="SETUP" />
+    <None Include="src\kernel_modules\cpufreq\menu_governor.patch" />
+    <None Include="src\shared\ce\scheduler\demo\Makefile" />
+    <None Include="src\quagga\gal_rest\Makefile" />
+    <None Include="src\quagga\gal_rest\run.sh" />
+    <None Include="src\ce\html\Home\Index.html" />
+    <None Include="src\ce\html\Scripts\jquery.min.js" />
+    <None Include="src\ce\html\Scripts\highcharts.js" />
+    <None Include="src\ce\html\Scripts\highcharts.src.js" />
+    <None Include="src\ce\html\Scripts\highcharts-all.js" />
+    <None Include="src\ce\html\Scripts\highcharts-more.js" />
+    <None Include="src\ce\html\Scripts\highcharts-more.src.js" />
+    <None Include="src\ce\html\Scripts\adapters\mootools-adapter.js" />
+    <None Include="src\ce\html\Scripts\adapters\mootools-adapter.src.js" />
+    <None Include="src\ce\html\Scripts\adapters\prototype-adapter.js" />
+    <None Include="src\ce\html\Scripts\adapters\prototype-adapter.src.js" />
+    <None Include="src\ce\html\Scripts\adapters\standalone-framework.js" />
+    <None Include="src\ce\html\Scripts\adapters\standalone-framework.src.js" />
+    <None Include="src\ce\html\Scripts\modules\annotations.js" />
+    <None Include="src\ce\html\Scripts\modules\annotations.src.js" />
+    <None Include="src\ce\html\Scripts\modules\canvas-tools.js" />
+    <None Include="src\ce\html\Scripts\modules\canvas-tools.src.js" />
+    <None Include="src\ce\html\Scripts\modules\data.js" />
+    <None Include="src\ce\html\Scripts\modules\data.src.js" />
+    <None Include="src\ce\html\Scripts\modules\drilldown.js" />
+    <None Include="src\ce\html\Scripts\modules\drilldown.src.js" />
+    <None Include="src\ce\html\Scripts\modules\exporting.js" />
+    <None Include="src\ce\html\Scripts\modules\exporting.src.js" />
+    <None Include="src\ce\html\Scripts\modules\funnel.js" />
+    <None Include="src\ce\html\Scripts\modules\funnel.src.js" />
+    <None Include="src\ce\html\Scripts\modules\heatmap.js" />
+    <None Include="src\ce\html\Scripts\modules\heatmap.src.js" />
+    <None Include="src\ce\html\Scripts\modules\map.js" />
+    <None Include="src\ce\html\Scripts\modules\map.src.js" />
+    <None Include="src\ce\html\Scripts\modules\no-data-to-display.js" />
+    <None Include="src\ce\html\Scripts\modules\no-data-to-display.src.js" />
+    <None Include="src\ce\html\Scripts\themes\dark-blue.js" />
+    <None Include="src\ce\html\Scripts\themes\dark-green.js" />
+    <None Include="src\ce\html\Scripts\themes\gray.js" />
+    <None Include="src\ce\html\Scripts\themes\grid.js" />
+    <None Include="src\ce\html\Scripts\themes\skies.js" />
+    <None Include="src\ce\html\Home\Tree.html" />
+    <None Include="src\ce\html\Home\Graphs.html" />
+    <None Include="src\ce\html\Scripts\FE.js" />
+    <None Include="src\ce\html\Scripts\functionlib.js" />
+    <None Include="src\ce\html\Scripts\graphs.js" />
+    <None Include="src\ce\html\Scripts\IE.js" />
+    <None Include="src\ce\html\Scripts\main.js" />
+    <None Include="src\ce\html\Scripts\menu.js" />
+    <None Include="src\ce\html\Styles\style.css" />
+    <None Include="src\fe\html\Home\Index.html" />
+    <None Include="src\shared\io_end_point\tcp\client\Makefile" />
+    <None Include="src\shared\io_end_point\tcp\server\Makefile" />
+    <None Include="src\ce\html\Home\Gal.html" />
+    <None Include="WebUI\css\jquery-ui-1.10.3.custom.css" />
+    <None Include="WebUI\css\jquery-ui-1.10.3.custom.min.css" />
+    <None Include="WebUI\css\ui.jqgrid.css" />
+    <None Include="WebUI\images\cpu.svg" />
+    <None Include="WebUI\images\Ethernet_plug_grey.svg" />
+    <None Include="WebUI\images\network-wired.svg" />
+    <None Include="WebUI\images\router.svg" />
+    <None Include="WebUI\images\switch.svg" />
+    <None Include="WebUI\js\jquery.jqGrid.min.js" />
+    <None Include="WebUI\js\jquery.jqGrid.src.js" />
+    <None Include="WebUI\js\jquery-1.9.0.min.js" />
+    <None Include="WebUI\plugins\grid.addons.js" />
+    <None Include="WebUI\plugins\grid.postext.js" />
+    <None Include="WebUI\plugins\grid.setcolumns.js" />
+    <None Include="WebUI\plugins\jquery.contextmenu.js" />
+    <None Include="WebUI\plugins\jquery.searchFilter.js" />
+    <None Include="WebUI\plugins\jquery.tablednd.js" />
+    <None Include="WebUI\plugins\searchFilter.css" />
+    <None Include="WebUI\plugins\ui.multiselect.css" />
+    <None Include="WebUI\plugins\ui.multiselect.js" />
+    <None Include="WebUI\src\css\ui.jqgrid.css" />
+    <None Include="WebUI\src\css\ui.multiselect.css" />
+    <None Include="WebUI\src\i18n\grid.locale-ar.js" />
+    <None Include="WebUI\src\i18n\grid.locale-bg.js" />
+    <None Include="WebUI\src\i18n\grid.locale-bg1251.js" />
+    <None Include="WebUI\src\i18n\grid.locale-cat.js" />
+    <None Include="WebUI\src\i18n\grid.locale-cn.js" />
+    <None Include="WebUI\src\i18n\grid.locale-cs.js" />
+    <None Include="WebUI\src\i18n\grid.locale-da.js" />
+    <None Include="WebUI\src\i18n\grid.locale-de.js" />
+    <None Include="WebUI\src\i18n\grid.locale-dk.js" />
+    <None Include="WebUI\src\i18n\grid.locale-el.js" />
+    <None Include="WebUI\src\i18n\grid.locale-en.js" />
+    <None Include="WebUI\src\i18n\grid.locale-es.js" />
+    <None Include="WebUI\src\i18n\grid.locale-fa.js" />
+    <None Include="WebUI\src\i18n\grid.locale-fi.js" />
+    <None Include="WebUI\src\i18n\grid.locale-fr.js" />
+    <None Include="WebUI\src\i18n\grid.locale-gl.js" />
+    <None Include="WebUI\src\i18n\grid.locale-he.js" />
+    <None Include="WebUI\src\i18n\grid.locale-hr.js" />
+    <None Include="WebUI\src\i18n\grid.locale-hr1250.js" />
+    <None Include="WebUI\src\i18n\grid.locale-hu.js" />
+    <None Include="WebUI\src\i18n\grid.locale-id.js" />
+    <None Include="WebUI\src\i18n\grid.locale-is.js" />
+    <None Include="WebUI\src\i18n\grid.locale-it.js" />
+    <None Include="WebUI\src\i18n\grid.locale-ja.js" />
+    <None Include="WebUI\src\i18n\grid.locale-kr.js" />
+    <None Include="WebUI\src\i18n\grid.locale-lt.js" />
+    <None Include="WebUI\src\i18n\grid.locale-mne.js" />
+    <None Include="WebUI\src\i18n\grid.locale-nl.js" />
+    <None Include="WebUI\src\i18n\grid.locale-no.js" />
+    <None Include="WebUI\src\i18n\grid.locale-pl.js" />
+    <None Include="WebUI\src\i18n\grid.locale-pt.js" />
+    <None Include="WebUI\src\i18n\grid.locale-pt-br.js" />
+    <None Include="WebUI\src\i18n\grid.locale-ro.js" />
+    <None Include="WebUI\src\i18n\grid.locale-ru.js" />
+    <None Include="WebUI\src\i18n\grid.locale-sk.js" />
+    <None Include="WebUI\src\i18n\grid.locale-sr.js" />
+    <None Include="WebUI\src\i18n\grid.locale-sr-latin.js" />
+    <None Include="WebUI\src\i18n\grid.locale-sv.js" />
+    <None Include="WebUI\src\i18n\grid.locale-th.js" />
+    <None Include="WebUI\src\i18n\grid.locale-tr.js" />
+    <None Include="WebUI\src\i18n\grid.locale-tw.js" />
+    <None Include="WebUI\src\i18n\grid.locale-ua.js" />
+    <None Include="WebUI\src\i18n\grid.locale-vi.js" />
+    <None Include="WebUI\src\grid.base.js" />
+    <None Include="WebUI\src\grid.celledit.js" />
+    <None Include="WebUI\src\grid.common.js" />
+    <None Include="WebUI\src\grid.custom.js" />
+    <None Include="WebUI\src\grid.filter.js" />
+    <None Include="WebUI\src\grid.formedit.js" />
+    <None Include="WebUI\src\grid.grouping.js" />
+    <None Include="WebUI\src\grid.import.js" />
+    <None Include="WebUI\src\grid.inlinedit.js" />
+    <None Include="WebUI\src\grid.jqueryui.js" />
+    <None Include="WebUI\src\grid.loader.js" />
+    <None Include="WebUI\src\grid.subgrid.js" />
+    <None Include="WebUI\src\grid.tbltogrid.js" />
+    <None Include="WebUI\src\grid.treegrid.js" />
+    <None Include="WebUI\src\jqDnR.js" />
+    <None Include="WebUI\src\jqModal.js" />
+    <None Include="WebUI\src\jquery.fmatter.js" />
+    <None Include="WebUI\src\jquery.jqGrid.js" />
+    <None Include="WebUI\src\JsonXml.js" />
+    <None Include="WebUI\WebContent\eas.js" />
+    <None Include="WebUI\.project" />
+    <None Include="WebUI\FE.js" />
+    <None Include="WebUI\FE1_g0.json" />
+    <None Include="WebUI\FE1_g1.json" />
+    <None Include="WebUI\FE1_g2.json" />
+    <None Include="WebUI\functionlib.js" />
+    <None Include="WebUI\generate_json.sh" />
+    <None Include="WebUI\graph.json" />
+    <None Include="WebUI\graphs.html" />
+    <None Include="WebUI\graphs.js" />
+    <None Include="WebUI\highcharts.js" />
+    <None Include="WebUI\highcharts-more.js" />
+    <None Include="WebUI\IE.js" />
+    <None Include="WebUI\index.html" />
+    <None Include="WebUI\ipfib.html" />
+    <None Include="WebUI\ipfib.js" />
+    <None Include="WebUI\jquery-1.9.1.js" />
+    <None Include="WebUI\main.js" />
+    <None Include="WebUI\menu.js" />
+    <None Include="WebUI\style.css" />
+    <None Include="WebUI\tree.html" />
+    <None Include="src\ce\html\Home\Fib.html" />
+    <None Include="src\ce\html\Scripts\i18n\grid.locale-en.js" />
+    <None Include="src\ce\html\Scripts\i18n\grid.locale-it.js" />
+    <None Include="WebUI\js\i18n\grid.locale-en.js" />
+    <None Include="WebUI\js\i18n\grid.locale-it.js" />
+    <None Include="src\ce\html\Scripts\jquery.jqGrid.min.js" />
+    <None Include="src\ce\html\Styles\jquery-ui-1.10.3.custom.css" />
+    <None Include="src\ce\html\Styles\ui.jqgrid.css" />
+    <None Include="src\ce\html\Scripts\ipfib.js" />
+    <None Include="src\ce\html\Images\cpu.svg" />
+    <None Include="src\ce\html\Images\Ethernet_plug_grey.svg" />
+    <None Include="src\ce\html\Images\network-wired.svg" />
+    <None Include="src\ce\html\Images\router.svg" />
+    <None Include="src\ce\html\Images\switch.svg" />
+    <None Include="src\ce\html\Scripts\tree.js" />
+    <None Include="WebUI\tree.js" />
+    <None Include="scripts\ce\get-pc.sh" />
+    <None Include="scripts\ce\get-pc-mlx.sh" />
+    <None Include="scripts\ce\get-pc-nocciolo.sh" />
+    <None Include="scripts\ce\get-pc-noce.sh" />
+    <None Include="scripts\ce\get-pc-of1.sh" />
+    <None Include="scripts\ce\get-pc-of2.sh" />
+    <None Include="scripts\ce\get-pc-pino.sh" />
+    <None Include="scripts\ce\get-pc-salicone.sh" />
+    <None Include="scripts\ce\get-pc-total.sh" />
+    <None Include="scripts\ce\get-traffic.sh" />
+    <None Include="scripts\ce\script_raritan.sh" />
+    <None Include="scripts\ce\script_raritan_sum.sh" />
+    <None Include="scripts\ce\set-addresses.sh" />
+    <None Include="scripts\fe\get-pc.sh" />
+    <None Include="scripts\fe\script_raritan.sh" />
+    <None Include="scripts\fe\set-addresses.sh" />
+    <None Include="scripts\fe\test.sh" />
+    <None Include="scripts\fe\test_test.sh" />
+    <None Include="src\ce\html\Home\Of.html" />
+    <None Include="src\ce\html\Home\Logs.html" />
+    <None Include="src\ce\html\Scripts\of.js" />
+    <None Include="src\shared\io_end_point\udp\Makefile" />
+    <None Include="xlp_build.sh" />
+    <None Include="scripts\ce\get-pc-corbezzolo.sh" />
+    <None Include="scripts\ce\get-port-traffic.sh" />
+    <None Include="scripts\ce\get-routes.sh" />
+    <None Include="scripts\ce\get-traffic-corbezzolo.sh" />
+    <None Include="scripts\ce\get-traffic-noce.sh" />
+    <None Include="scripts\ce\get-traffic-salicone.sh" />
+    <None Include="scripts\ce\clean_deth.sh" />
+    <None Include="scripts\ce\get-port-all-traffic.sh" />
+    <None Include="scripts\ce\load_module.sh" />
+    <None Include="scripts\ce\run_ce.sh" />
+    <None Include="scripts\mock\get-pc.sh" />
+    <None Include="scripts\mock\get-pc-FE1.sh" />
+    <None Include="scripts\mock\get-pc-FE2.sh" />
+    <None Include="scripts\mock\get-pc-FE3.sh" />
+    <None Include="scripts\mock\get-pc-MLX.sh" />
+    <None Include="scripts\mock\get-pc-OF1.sh" />
+    <None Include="scripts\mock\get-pc-total.sh" />
+    <None Include="scripts\mock\get-port-all-traffic.sh" />
+    <None Include="scripts\mock\get-port-traffic.sh" />
+    <None Include="scripts\mock\get-routes.sh" />
+    <None Include="scripts\mock\get-traffic.sh" />
+    <None Include="scripts\mock\get-traffic-FE1.sh" />
+    <None Include="scripts\mock\get-traffic-FE2.sh" />
+    <None Include="scripts\mock\get-traffic-FE3.sh" />
+    <None Include="src\se\html\Home\Index.html" />
+    <None Include="Model\HTTP Server.activitydiagram" />
+    <None Include="Model\HTTP Server.activitydiagram.layout" />
+    <None Include="Model\Model.modelproj" />
+    <None Include="Model\Setup.activitydiagram" />
+    <None Include="Model\Setup.activitydiagram.layout" />
+    <None Include="Model\ModelDefinition\Model.uml" />
+    <None Include="src\shared\se\lcp\demo\Makefile" />
+    <None Include="src\shared\se\lcp\xlp_demo\Makefile" />
+    <None Include="REST API for the GAL.pdf" />
+    <None Include="openflow-spec-v1.4.0.pdf" />
+    <None Include="openflow-spec-v1.3.0.pdf" />
+    <None Include="openflow-spec-v1.0.0.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DEMO" />
+    <Text Include="src\kernel_modules\virtual_interfaces\Makefile" />
+    <Text Include="src\quagga\ce_stub\Makefile" />
+    <Text Include="TODO" />
+    <Text Include="WebUI\js\Changes.txt" />
+    <Text Include="WebUI\js\install.txt" />
+    <Text Include="src\shared\ce\lcp\demo\Makefile" />
+    <Text Include="scripts\mock\9.txt" />
+    <Text Include="scripts\mock\10.txt" />
+    <Text Include="scripts\mock\11.txt" />
+    <Text Include="scripts\mock\12.txt" />
+    <Text Include="scripts\mock\13.txt" />
+    <Text Include="scripts\mock\14.txt" />
+    <Text Include="scripts\mock\15.txt" />
+    <Text Include="src\bridge\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="WebUI\css\ellipsis-xbl.xml" />
+    <Xml Include="WebUI\src\css\ellipsis-xbl.xml" />
+    <Xml Include="src\ce\config\avocado\ce.xml" />
+    <Xml Include="src\ce\config\avocado\drop.xml" />
+    <Xml Include="src\ce\config\avocado\flows.xml" />
+    <Xml Include="src\ce\config\avocado\gal.xml" />
+    <Xml Include="src\ce\config\avocado\http.xml" />
+    <Xml Include="src\ce\config\avocado\httpd.xml" />
+    <Xml Include="src\ce\config\avocado\network.xml" />
+    <Xml Include="src\ce\config\avocado\openflow.xml" />
+    <Xml Include="src\ce\config\avocado\policy.xml" />
+    <Xml Include="src\ce\config\banano\ce.xml" />
+    <Xml Include="src\ce\config\banano\drop.xml" />
+    <Xml Include="src\ce\config\banano\flows.xml" />
+    <Xml Include="src\ce\config\banano\gal.xml" />
+    <Xml Include="src\ce\config\banano\http.xml" />
+    <Xml Include="src\ce\config\banano\httpd.xml" />
+    <Xml Include="src\ce\config\banano\network.xml" />
+    <Xml Include="src\ce\config\banano\openflow.xml" />
+    <Xml Include="src\ce\config\banano\policy.xml" />
+    <Xml Include="src\fe\config\mango\demo.xml" />
+    <Xml Include="src\fe\config\mango\drop.xml" />
+    <Xml Include="src\fe\config\mango\gal.xml" />
+    <Xml Include="src\fe\config\mango\httpd.xml" />
+    <Xml Include="src\fe\config\mango\policy.xml" />
+    <Xml Include="src\fe\config\mango\se.xml" />
+    <Xml Include="src\fe\config\salicone\demo.xml" />
+    <Xml Include="src\fe\config\salicone\drop.xml" />
+    <Xml Include="src\fe\config\salicone\gal.xml" />
+    <Xml Include="src\fe\config\salicone\httpd.xml" />
+    <Xml Include="src\fe\config\salicone\policy.xml" />
+    <Xml Include="src\fe\config\salicone\se.xml" />
+    <Xml Include="src\ce\config\mango\ce.xml" />
+    <Xml Include="src\ce\config\mango\drop.xml" />
+    <Xml Include="src\ce\config\mango\flows.xml" />
+    <Xml Include="src\ce\config\mango\gal.xml" />
+    <Xml Include="src\ce\config\mango\http.xml" />
+    <Xml Include="src\ce\config\mango\httpd.xml" />
+    <Xml Include="src\ce\config\mango\network.xml" />
+    <Xml Include="src\ce\config\mango\openflow.xml" />
+    <Xml Include="src\ce\config\mango\policy.xml" />
+    <Xml Include="src\fe\config\pino\demo.xml" />
+    <Xml Include="src\fe\config\pino\drop.xml" />
+    <Xml Include="src\fe\config\pino\gal.xml" />
+    <Xml Include="src\fe\config\pino\httpd.xml" />
+    <Xml Include="src\fe\config\pino\policy.xml" />
+    <Xml Include="src\fe\config\pino\se.xml" />
+    <Xml Include="src\fe\config\noce\demo.xml" />
+    <Xml Include="src\fe\config\noce\drop.xml" />
+    <Xml Include="src\fe\config\noce\gal.xml" />
+    <Xml Include="src\fe\config\noce\httpd.xml" />
+    <Xml Include="src\fe\config\noce\policy.xml" />
+    <Xml Include="src\fe\config\noce\se.xml" />
+    <Xml Include="src\fe\config\nocciolo\demo.xml" />
+    <Xml Include="src\fe\config\nocciolo\drop.xml" />
+    <Xml Include="src\fe\config\nocciolo\gal.xml" />
+    <Xml Include="src\fe\config\nocciolo\httpd.xml" />
+    <Xml Include="src\fe\config\nocciolo\policy.xml" />
+    <Xml Include="src\fe\config\nocciolo\se.xml" />
+    <Xml Include="src\ce\config\MLX\gal.xml" />
+    <Xml Include="src\ce\config\OF1\gal.xml" />
+    <Xml Include="src\ce\config\OF2\gal.xml" />
+    <Xml Include="src\ce\config\corbezzolo\gal.xml" />
+    <Xml Include="src\fe\config\maggiociondolo\demo.xml" />
+    <Xml Include="src\fe\config\corbezzolo\demo.xml" />
+    <Xml Include="src\fe\config\corbezzolo\se.xml" />
+    <Xml Include="src\fe\config\corbezzolo\policy.xml" />
+    <Xml Include="src\fe\config\corbezzolo\drop.xml" />
+    <Xml Include="src\fe\config\corbezzolo\httpd.xml" />
+    <Xml Include="src\fe\config\corbezzolo\gal.xml" />
+    <Xml Include="src\fe\config\maggiociondolo\drop.xml" />
+    <Xml Include="src\fe\config\maggiociondolo\gal.xml" />
+    <Xml Include="src\fe\config\maggiociondolo\httpd.xml" />
+    <Xml Include="src\fe\config\maggiociondolo\policy.xml" />
+    <Xml Include="src\fe\config\maggiociondolo\se.xml" />
+    <Xml Include="src\fe\config\banano\demo.xml" />
+    <Xml Include="src\fe\config\banano\drop.xml" />
+    <Xml Include="src\fe\config\banano\gal.xml" />
+    <Xml Include="src\fe\config\banano\httpd.xml" />
+    <Xml Include="src\fe\config\banano\policy.xml" />
+    <Xml Include="src\fe\config\banano\se.xml" />
+    <Xml Include="src\ce\config\xlp\gal.xml" />
+    <Xml Include="src\se\config\banano\demo.xml" />
+    <Xml Include="src\se\config\banano\drop.xml" />
+    <Xml Include="src\se\config\banano\gal.xml" />
+    <Xml Include="src\se\config\banano\httpd.xml" />
+    <Xml Include="src\se\config\banano\policy.xml" />
+    <Xml Include="src\se\config\banano\se.xml" />
+    <Xml Include="src\se\config\corbezzolo\demo.xml" />
+    <Xml Include="src\se\config\corbezzolo\drop.xml" />
+    <Xml Include="src\se\config\corbezzolo\gal.xml" />
+    <Xml Include="src\se\config\corbezzolo\httpd.xml" />
+    <Xml Include="src\se\config\corbezzolo\policy.xml" />
+    <Xml Include="src\se\config\corbezzolo\se.xml" />
+    <Xml Include="src\se\config\maggiociondolo\demo.xml" />
+    <Xml Include="src\se\config\maggiociondolo\drop.xml" />
+    <Xml Include="src\se\config\maggiociondolo\gal.xml" />
+    <Xml Include="src\se\config\maggiociondolo\httpd.xml" />
+    <Xml Include="src\se\config\maggiociondolo\policy.xml" />
+    <Xml Include="src\se\config\maggiociondolo\se.xml" />
+    <Xml Include="src\se\config\mango\demo.xml" />
+    <Xml Include="src\se\config\mango\drop.xml" />
+    <Xml Include="src\se\config\mango\gal.xml" />
+    <Xml Include="src\se\config\mango\httpd.xml" />
+    <Xml Include="src\se\config\mango\policy.xml" />
+    <Xml Include="src\se\config\mango\se.xml" />
+    <Xml Include="src\se\config\nocciolo\demo.xml" />
+    <Xml Include="src\se\config\nocciolo\drop.xml" />
+    <Xml Include="src\se\config\nocciolo\gal.xml" />
+    <Xml Include="src\se\config\nocciolo\httpd.xml" />
+    <Xml Include="src\se\config\nocciolo\policy.xml" />
+    <Xml Include="src\se\config\nocciolo\se.xml" />
+    <Xml Include="src\se\config\noce\demo.xml" />
+    <Xml Include="src\se\config\noce\drop.xml" />
+    <Xml Include="src\se\config\noce\gal.xml" />
+    <Xml Include="src\se\config\noce\httpd.xml" />
+    <Xml Include="src\se\config\noce\policy.xml" />
+    <Xml Include="src\se\config\noce\se.xml" />
+    <Xml Include="src\se\config\pino\demo.xml" />
+    <Xml Include="src\se\config\pino\drop.xml" />
+    <Xml Include="src\se\config\pino\gal.xml" />
+    <Xml Include="src\se\config\pino\httpd.xml" />
+    <Xml Include="src\se\config\pino\policy.xml" />
+    <Xml Include="src\se\config\pino\se.xml" />
+    <Xml Include="src\se\config\salicone\demo.xml" />
+    <Xml Include="src\se\config\salicone\drop.xml" />
+    <Xml Include="src\se\config\salicone\gal.xml" />
+    <Xml Include="src\se\config\salicone\httpd.xml" />
+    <Xml Include="src\se\config\salicone\policy.xml" />
+    <Xml Include="src\se\config\salicone\se.xml" />
+    <Xml Include="src\ce\config\SE1\gal.xml" />
+    <Xml Include="src\ce\config\SE2\gal.xml" />
+    <Xml Include="src\ce\config\SE3\gal.xml" />
+    <Xml Include="src\ce\config\pino\ce.xml" />
+    <Xml Include="src\ce\config\pino\drop.xml" />
+    <Xml Include="src\ce\config\pino\flows.xml" />
+    <Xml Include="src\ce\config\pino\gal.xml" />
+    <Xml Include="src\ce\config\pino\http.xml" />
+    <Xml Include="src\ce\config\pino\httpd.xml" />
+    <Xml Include="src\ce\config\pino\network.xml" />
+    <Xml Include="src\ce\config\pino\openflow.xml" />
+    <Xml Include="src\ce\config\pino\policy.xml" />
+    <Xml Include="src\ce\config\testce\ce.xml" />
+    <Xml Include="src\ce\config\testce\drop.xml" />
+    <Xml Include="src\ce\config\testce\flows.xml" />
+    <Xml Include="src\ce\config\testce\gal.xml" />
+    <Xml Include="src\ce\config\testce\http.xml" />
+    <Xml Include="src\ce\config\testce\httpd.xml" />
+    <Xml Include="src\ce\config\testce\network.xml" />
+    <Xml Include="src\ce\config\testce\openflow.xml" />
+    <Xml Include="src\ce\config\testce\policy.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\ce\html\Images\fe_supermicro.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\fe_supermicro1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\mlx.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\pronto.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\fe\html\Images\tnt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\animated-overlay.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_flat_0_aaaaaa_40x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_flat_55_999999_40x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_flat_75_aaaaaa_40x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_glass_45_0078ae_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_glass_55_f8da4e_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_glass_55_f8090d_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_glass_65_ffffff_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_glass_75_79c9ec_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_glass_75_577295_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_glass_95_fef1ec_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_gloss-wave_45_e14f1c_500x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_gloss-wave_50_6eac2c_500x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_gloss-wave_75_2191c0_500x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_highlight-soft_75_DDDDDD_1x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_inset-hard_100_fcfdfd_1x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_spotlight_75_577295_600x600.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-bg_spotlight_75_dddddd_600x600.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_000000_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_056b93_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_0078ae_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_454545_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_577295_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_cd0a0a_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_d8e7f3_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_dddddd_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_e0fdff_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_f5e175_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_f7a50d_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_fcd113_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\css\images\ui-icons_FFFFFF_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\images\ethernet-md.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\images\featured-border.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\images\greysquarearrow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\images\greysquarearrow22px.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\images\tab-home.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\images\tabs.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\fe_supermicro.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\fe_supermicro1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\mlx.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\mlx.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\pronto.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WebUI\pronto.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\animated-overlay.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_flat_0_aaaaaa_40x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_flat_55_999999_40x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_flat_75_aaaaaa_40x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_glass_45_0078ae_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_glass_55_f8da4e_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_glass_55_f8090d_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_glass_65_ffffff_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_glass_75_79c9ec_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_glass_75_577295_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_glass_95_fef1ec_1x400.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_gloss-wave_45_e14f1c_500x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_gloss-wave_50_6eac2c_500x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_gloss-wave_75_2191c0_500x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_highlight-soft_75_DDDDDD_1x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_inset-hard_100_fcfdfd_1x100.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_spotlight_75_577295_600x600.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-bg_spotlight_75_dddddd_600x600.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_000000_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_056b93_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_0078ae_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_454545_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_577295_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_cd0a0a_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_d8e7f3_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_dddddd_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_e0fdff_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_f5e175_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_f7a50d_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_fcd113_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ui-icons_FFFFFF_256x240.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\ethernet-md.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\featured-border.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\greysquarearrow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\greysquarearrow22px.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\tab-home.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\ce\html\Images\tabs.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\se\html\Images\tnt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

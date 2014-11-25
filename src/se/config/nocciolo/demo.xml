@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<demo num_cores="8">
+  <local>
+    <address>192.168.255.255</address>
+    <port>666</port>
+  </local>
+
+  <slots>300</slots>
+
+  <profiles default="2">
+    <profile id ="0">
+      <slots>
+        <slot num="1">
+          <cores active="8" sleep="false" />
+        </slot>
+      </slots>
+    </profile>
+
+    <profile id ="1">
+      <slots>
+        <slot num="1">
+          <cores active="8" />
+        </slot>
+      </slots>
+    </profile>
+
+    <profile id="2">
+      <slots>
+        <slot num="1">
+          <cores active="3" />
+        </slot>
+        <slot num="9">
+          <cores active="2" />
+        </slot>
+        <slot num="11">
+          <cores active="1" />
+        </slot>
+        <slot num="20">
+          <command>
+            <![CDATA[/sbin/halt -p]]>
+          </command>
+        </slot>
+        <slot num="225">
+          <cores active="1" />
+        </slot>
+        <slot num="237">
+          <cores active="2" />
+        </slot>
+        <slot num="249">
+          <cores active="3" />
+        </slot>
+      </slots>
+    </profile>
+  </profiles>
+</demo>

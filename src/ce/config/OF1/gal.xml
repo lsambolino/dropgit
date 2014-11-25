@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Gal>
+  <Type>
+    <![CDATA[Network Switch]]>
+  </Type>
+
+  <Description>
+    <![CDATA[Network Switch]]>
+  </Description>
+
+  <LogicalResources>
+    <LogicalResource id="port1">
+      <Type>
+        <![CDATA[Switch Port]]>
+      </Type>
+      <Description>
+        <![CDATA[Switch Port]]>
+      </Description>
+    </LogicalResource>
+
+    <LogicalResource id="port2">
+      <Type>
+        <![CDATA[Switch Port]]>
+      </Type>
+      <Description>
+        <![CDATA[Switch Port]]>
+      </Description>
+    </LogicalResource>
+  </LogicalResources>
+
+  <PhysicalResources>
+    <PhysicalResource id="port1">
+      <Type>
+        <![CDATA[Switch Port]]>
+      </Type>
+      <Description>
+        <![CDATA[Switch Port]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="port2">
+      <Type>
+        <![CDATA[Switch Port]]>
+      </Type>
+      <Description>
+        <![CDATA[Switch Port]]>
+      </Description>
+    </PhysicalResource>
+  </PhysicalResources>
+
+  <SensorResources>
+    <SensorResource id="momentaryConsumption" type="6" scale="9" precision="1" refresh_rate="0" max ="60">
+      <Description>
+        <![CDATA[Momentary Consumption]]>
+      </Description>
+    </SensorResource>
+  </SensorResources>
+
+  <EnergyAwareStates>
+    <EnergyAwareState id="0">
+      <MinimumPowerGain>0</MinimumPowerGain>
+      <MaximumPacketThroughput>333672</MaximumPacketThroughput>
+      <MaximumBitThroughput>946518328</MaximumBitThroughput>
+    </EnergyAwareState>
+  </EnergyAwareStates>
+</Gal>

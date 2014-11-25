@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ce>
+  <wol>
+    <num>5</num>
+    <interval>1000</interval>
+  </wol>
+
+  <netlink>
+    <debug>false</debug>
+  </netlink>
+
+  <data>
+    <file>data.csv</file>
+    <elements>
+      <polling>
+        <interval>1</interval>
+      </polling>
+    </elements>
+    <history>
+      <size>100</size>
+    </history>
+  </data>
+  
+  <lcp>
+    <class>DemoLCP</class>
+    <sync>
+      <ip>192.168.255.255</ip>
+      <port>666</port>
+      <slots>300</slots>
+    </sync>
+  </lcp>
+
+  <connection>
+    <timeout>5000</timeout>
+  </connection>
+</ce>

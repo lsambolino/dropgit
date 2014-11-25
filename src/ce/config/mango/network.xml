@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network>
+  <topology>
+    <nodes>
+      <node name="pino" />
+      <node name="nocciolo" />
+      <node name="maggiociondolo" />
+      
+      <node name="MLX" force_connected="true">
+        <services>
+          <service type="Interconnection" />
+          <service type="GalFile" />
+        </services>
+      </node>
+
+      <node name="OF2" />
+    </nodes>
+  </topology>
+
+  <interfaces>
+    <!-- MLX -->
+    <interface name="deth0" mac="aa:bb:cc:02:01:30" node="MLX" port="30">
+      <addresses>
+        <address value="10.252.30.2" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth1" mac="aa:bb:cc:02:01:31" node="MLX" port="31">
+      <addresses>
+        <address value="10.252.31.2" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth2" mac="aa:bb:cc:02:01:32" node="MLX" port="32">
+      <addresses>
+        <address value="10.252.32.2" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth3" mac="aa:bb:cc:02:01:33" node="MLX" port="33">
+      <addresses>
+        <address value="10.252.33.2" prefix="24" />
+      </addresses>
+    </interface>
+
+    <!-- Pronto -->
+    <interface name="deth4" mac="aa:bb:cc:02:02:01" node="OF2" port="1">
+      <addresses>
+        <address value="10.252.1.2" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth5" mac="aa:bb:cc:02:02:01" node="OF2" port="2">
+      <addresses>
+        <address value="10.252.2.2" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth6" mac="aa:bb:cc:02:02:03" node="OF2" port="3">
+      <addresses>
+        <address value="10.252.3.2" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth7" mac="aa:bb:cc:02:02:04" node="OF2" port="4">
+      <addresses>
+        <address value="10.252.4.2" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth8" mac="aa:bb:cc:02:02:05" node="OF2" port="5">
+      <addresses>
+        <address value="10.252.5.2" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth9" mac="aa:bb:cc:02:02:06" node="OF2" port="6">
+      <addresses>
+        <address value="10.252.6.2" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth10" mac="aa:bb:cc:02:02:07" node="OF2" port="7">
+      <addresses>
+        <address value="10.252.7.2" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth11" mac="aa:bb:cc:02:02:08" node="OF2" port="8">
+      <addresses>
+        <address value="10.252.8.2" prefix="24" />
+      </addresses>
+    </interface>
+    <interface name="deth12" mac="aa:bb:cc:02:02:09" node="OF2" port="9">
+      <addresses>
+        <address value="10.252.9.2" prefix="24" />
+      </addresses>
+    </interface>
+  </interfaces>
+</network>

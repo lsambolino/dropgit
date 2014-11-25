@@ -1,0 +1,4 @@
+
+Nell'interfaccia GAL:
+1) Mettere qualche check per assicurarsi che non vi siano incompatibilità fra gli stati del device e degli FE.
+2) Vedere se ha senso avere FE con EAS differenti ed in caso di risposta negativa assicurarsi che non sia possibile averne.

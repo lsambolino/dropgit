@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Gal>
+  <Type>
+    <![CDATA[Forwarding Element]]>
+  </Type>
+
+  <Description>
+    <![CDATA[DROP Forwarding Element]]>
+  </Description>
+
+  <LogicalResources>
+    <LogicalResource id="eth0">
+      <Type>
+        <![CDATA[Network Interface]]>
+      </Type>
+      <Description>
+        <![CDATA[Network Interface]]>
+      </Description>
+    </LogicalResource>
+
+    <LogicalResource id="eth1">
+      <Type>
+        <![CDATA[Network Interface]]>
+      </Type>
+      <Description>
+        <![CDATA[Network Interface]]>
+      </Description>
+    </LogicalResource>
+  </LogicalResources>
+
+  <PhysicalResources>
+    <PhysicalResource id="Core0">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core1">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core2">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core3">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core4">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core5">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core6">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+
+    <PhysicalResource id="Core7">
+      <Type>
+        <![CDATA[CPU Core]]>
+      </Type>
+      <Description>
+        <![CDATA[CPU Core]]>
+      </Description>
+    </PhysicalResource>
+  </PhysicalResources>
+
+  <SensorResources>
+    <SensorResource id="momentaryConsumption" type="6" scale="9" precision="1" refresh_rate="0" max="160">
+      <Description>
+        <![CDATA[Momentary Consumption]]>
+      </Description>
+    </SensorResource>
+    <SensorResource id="activeCores" type="6" scale="9" precision="1" refresh_rate="0" max="8">
+      <Description>
+        <![CDATA[Momentary Consumption]]>
+      </Description>
+    </SensorResource>
+  </SensorResources>
+
+  <EnergyAwareStates>
+    <EnergyAwareState id="0">
+      <MinimumPowerGain>0</MinimumPowerGain>
+      <MaximumPacketThroughput>333672</MaximumPacketThroughput>
+      <MaximumBitThroughput>946518328</MaximumBitThroughput>
+    </EnergyAwareState>
+  </EnergyAwareStates>
+</Gal>

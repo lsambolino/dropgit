@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<demo num_cores="12">
+  <profiles default="2">
+    <profile id ="0">
+      <slots>
+        <slot num="1">
+          <cores active="12" sleep="false" />
+        </slot>
+      </slots>
+    </profile>
+
+    <profile id="1">
+      <slots>
+        <cores active="12" />
+      </slots>
+    </profile>
+
+    <profile id="2">
+      <slots>
+        <slot num="1">
+          <cores active="2" />
+        </slot>
+        <slot num="27">
+          <cores active="1" />
+        </slot>
+        <slot num="40">
+          <command>
+            <![CDATA[/sbin/halt -p]]>
+          </command>
+        </slot>
+        <slot num="208">
+          <cores active="1" />
+        </slot>
+        <slot num="215">
+          <cores active="2" />
+        </slot>
+        <slot num="228">
+          <cores active="1" />
+        </slot>
+        <slot num="235">
+          <cores active="2" />
+        </slot>
+      </slots>
+    </profile>
+  </profiles>
+</demo>

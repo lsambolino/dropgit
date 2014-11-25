@@ -1,0 +1,8 @@
+
+GAL:
+    resource identifiers:
+        "0"             -> The whole distributed router.
+        "0.(d)ethX"     -> The logical resource X (the logical interface ethX) of the router.
+        "0.NAME"        -> The FE with name NAME.
+        "0.NAME.ethX"   -> The  logical resource X of the FE with name NAME.
+                               

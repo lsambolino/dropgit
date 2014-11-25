@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se>
+  <use_userspace_forward>false</use_userspace_forward>
+
+  <heartbeat>
+    <interval>2</interval>
+  </heartbeat>
+
+  <lcp>
+    <class>XLPDemoLCP</class>
+    <sync>
+      <ip>192.168.255.255</ip>
+      <port>666</port>
+      <slots>300</slots>
+    </sync>
+  </lcp>
+
+  <connection>
+    <interval>5</interval>
+    <attempts>0</attempts>
+    <delay>500</delay>
+  </connection>
+</se>

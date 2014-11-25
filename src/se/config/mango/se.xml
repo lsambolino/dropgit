@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se>
+  <use_userspace_forward>false</use_userspace_forward>
+
+  <heartbeat>
+    <interval>2</interval>
+  </heartbeat>
+
+  <forwarding>
+    <stats>
+      <enable>true</enable>
+      <interval>500</interval>
+    </stats>
+  </forwarding>
+
+  <lcp>
+    <class>DemoLCP</class>
+  </lcp>
+</se>

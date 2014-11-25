@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openflow>
+  <class>TcpIOServer</class>
+
+  <local>
+    <address>192.168.1.164</address>
+    <port>6633</port>
+  </local>
+
+  <connection>
+    <timeout>5000</timeout>
+  </connection>
+</openflow>

@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flows>
+  <vars>
+    <var name="mac_pino" value="90:e2:ba:3f:d3:15" />
+    <var name="mac_nocciolo" value="90:e2:ba:4d:33:49" />
+    <var name="mac_xlp1" value="00:0F:30:20:1D:63" />
+    <var name="mac_xlp2" value="00:0F:30:20:1D:65" />
+  </vars>
+
+  <slots>
+    <slot num="1">
+      <!-- BEGIN: OUT traffic ROUTER 2 -->
+      <!-- BEGIN F1 -->
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.2" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1701" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.3" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1702" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.4" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1703" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.5" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1704" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.6" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1705" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.7" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1706" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.8" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1707" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.9" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1708" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.10" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1709" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.11" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1710" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.12" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1711" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.13" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1712" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.14" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1713" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.15" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1714" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.16" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1715" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.17" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1716" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.18" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1717" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.19" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1718" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.5.8.20" prefix="32" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:02:08" />
+          <mod_vlan_vid tag="1719" />
+          <output port="8" />
+        </actions>
+      </flow>
+      <!-- END F1 -->
+
+      <!-- BEGIN F2 -->
+      <flow>
+        <filters>
+          <in_port port="51" />
+          <dl_vlan tag="801" />
+          <nw_dst ip="10.20.1.2" prefix="32" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="1" />
+          <mod_dl_src mac="aa:bb:cc:02:02:47" />
+          <mod_dl_dst mac="00:30:18:a0:fb:1b" />
+          <output port="47" />
+        </actions>
+      </flow>
+
+      <flow>
+        <filters>
+          <in_port port="51" />
+          <dl_vlan tag="803" />
+          <nw_dst ip="10.20.1.2" prefix="32" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="1" />
+          <mod_dl_src mac="aa:bb:cc:02:02:47" />
+          <mod_dl_dst mac="00:30:18:a0:fb:1b" />
+          <output port="47" />
+        </actions>
+      </flow>
+
+      <flow>
+        <filters>
+          <in_port port="47" />
+          <nw_dst ip="10.1.1.3" prefix="32" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="801" />
+          <mod_dl_src mac="aa:bb:cc:02:01:31" />
+          <mod_dl_dst mac="00:E0:92:00:01:46" />
+          <output port="51" />
+        </actions>
+      </flow>
+
+      <flow>
+        <filters>
+          <in_port port="47" />
+          <nw_dst ip="10.1.2.3" prefix="32" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="803" />
+          <mod_dl_src mac="aa:bb:cc:02:01:31" />
+          <mod_dl_dst mac="AC:9A:96:F0:28:06" />
+          <output port="51" />
+        </actions>
+      </flow>
+
+      <flow>
+        <filters>
+          <in_port port="51" />
+          <dl_vlan tag="801" />
+          <nw_dst ip="10.1.2.3" prefix="32" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="803" />
+          <mod_dl_src mac="aa:bb:cc:02:01:31" />
+          <mod_dl_dst mac="AC:9A:96:F0:28:06" />
+          <loop />
+        </actions>
+      </flow>
+
+      <flow>
+        <filters>
+          <in_port port="51" />
+          <dl_vlan tag="803" />
+          <nw_dst ip="10.1.1.3" prefix="32" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="801" />
+          <mod_dl_src mac="aa:bb:cc:02:01:31" />
+          <mod_dl_dst mac="00:E0:92:00:01:46" />
+          <loop />
+        </actions>
+      </flow>
+      <!-- END F2 -->
+
+      <!-- BEGIN F4 -->
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.200.11.0" prefix="24" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:01:32" />
+          <mod_vlan_vid tag="404" />
+          <output port="51" />
+        </actions>
+      </flow>
+      <!-- END F4 -->
+
+      <!-- BEGIN F6 -->
+      <flow>
+        <filters>
+          <in_port port="50" />
+          <nw_dst ip="10.5.13.0" prefix="24" />
+        </filters>
+
+        <actions>
+          <mod_vlan_vid tag="608" />
+          <mod_dl_src mac="aa:bb:cc:02:01:31" />
+          <output port="52" />
+        </actions>
+      </flow>
+      <!-- END F6 -->
+
+      <!-- BEGIN F12 -->
+      <flow>
+        <filters>
+          <in_port port="48" />
+        </filters>
+
+        <actions>
+          <mod_vlan_vid tag="403" />
+          <mod_dl_src mac="aa:bb:cc:02:01:30" />
+          <mod_dl_dst mac="aa:bb:cc:01:01:10" />
+          <output port="51" />
+        </actions>
+      </flow>
+      <!-- END F12 -->
+      <!-- END: OUT traffic ROUTER 2 -->
+
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.0" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.32" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.64" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.96" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.128" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.160" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.192" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.224" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.0" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3222" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.32" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3222" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.64" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3222" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.96" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3222" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.128" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3222" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.160" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3224" />
+          <mod_dl_dst mac="$mac_nocciolo" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.192" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3224" />
+          <mod_dl_dst mac="$mac_nocciolo" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.224" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3224" />
+          <mod_dl_dst mac="$mac_nocciolo" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="5">
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.160" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3222" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="15">
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.192" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3222" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="19">
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.224" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3222" />
+          <mod_dl_dst mac="$mac_xlp2" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="20">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.0" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3211" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="24">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.32" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3211" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="28">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.64" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3211" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="31">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.96" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3211" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="33">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.128" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3211" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="35">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.160" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3211" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="37">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.192" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3211" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="39">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.224" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3211" />
+          <mod_dl_dst mac="$mac_xlp1" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="50">
+      <!-- Rerouting Alcatel -->
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.200.11.0" prefix="24" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:01:33" />
+          <mod_vlan_vid tag="411" />
+          <output port="51" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="198">
+        <wol num="5" mac="00:25:90:1e:63:30" />
+    </slot>
+    <slot num="201">
+      <!-- Rerouting Alcatel -->
+      <flow>
+        <filters>
+          <in_port port="49" />
+          <nw_dst ip="10.200.11.0" prefix="24" />
+        </filters>
+        <actions>
+          <mod_dl_src mac="aa:bb:cc:02:01:32" />
+          <mod_vlan_vid tag="404" />
+          <output port="51" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="209">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.0" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.0" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3223" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="213">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.32" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="210">
+        <wol num="5" mac="00:30:48:cf:36:40" />
+    </slot>
+    <slot num="217">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.64" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="221">
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_src ip="10.5.13.32" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3223" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="223">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.96" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="225">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_dst ip="10.5.11.128" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="226">
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.0" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3224" />
+          <mod_dl_dst mac="$mac_nocciolo" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="228">
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.32" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3224" />
+          <mod_dl_dst mac="$mac_nocciolo" />
+          <output port="50" />
+        </actions>
+      </flow>
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_dst ip="10.5.11.160" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="231">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.192" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="234">
+      <flow>
+        <filters>
+          <dl_vlan tag="403" />
+          <nw_src ip="10.5.11.224" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3213" />
+          <mod_dl_dst mac="$mac_pino" />
+          <output port="49" />
+        </actions>
+      </flow>
+    </slot>
+    <slot num="237">
+      <flow>
+        <filters>
+          <dl_vlan tag="622" />
+          <nw_dst ip="10.5.13.64" prefix="27" />
+        </filters>
+        <actions>
+          <mod_vlan_vid tag="3224" />
+          <mod_dl_dst mac="$mac_nocciolo" />
+          <output port="50" />
+        </actions>
+      </flow>
+    </slot>
+  </slots>
+</flows>

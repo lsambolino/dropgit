@@ -1,0 +1,1 @@
+cmd_/drop/src/kernel_modules/virtual_interfaces/deth.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /drop/src/kernel_modules/virtual_interfaces/deth.ko /drop/src/kernel_modules/virtual_interfaces/deth.o /drop/src/kernel_modules/virtual_interfaces/deth.mod.o
